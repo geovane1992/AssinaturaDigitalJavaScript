@@ -1,10 +1,60 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 09/05/2014, 20:04:51
-    Author     : Geovane
-*/
+/*Corpo da página*/
 
+body
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: wheat;
+	color: crimson;
+	padding-bottom: 20px;
+}
+
+#middle_wrapper
+{
+	width: 970px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#mensagem
+{
+	display: none;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+
+/*Caixa com o conteúdo*/
+.box_wrapper
+{
+	background: #fff;
+	width: 560px;
+	text-align: center;
+	margin: 0 auto;
+	color: #464646;
+        font-weight: bold;
+	border-top-left-radius: 5px 5px;
+	-moz-border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+	-moz-border-top-right-radius: 5px 5px;
+}
+
+/*Título da caixa*/
+.box_top
+{
+	background: crimson;
+	color: #fff;
+	border-bottom: 3px solid crimson;
+	border-top-left-radius: 5px 5px;
+	-moz-border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+	-moz-border-top-right-radius: 5px 5px;
+	padding: 5px 5px 5px 5px;
+	text-align: left;
+}
+
+.box_content
+{
+	padding: 5px 5px 10px 10px;
+	text-align: left;
+}
