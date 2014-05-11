@@ -168,52 +168,6 @@ $(document).ready(function(){
 			}
 		});
 
-		$("input[name='priv_key_file']").bind("change", function(evt){
-			
-			var files = evt.target.files;
-
-			for(var i=0, f; i<files.length; ++i)
-			{
-				f = files[i];
-				var reader = new FileReader();
-
-				reader.onload = (function(theFile){
-					return function(e)
-					{
-						$("#priv_key").text("");
-						priv_key = reader.result;
-						alert("Erro ao ler documento!");
-					};
-				})(f);
-
-				reader.onloadstart = (function(theFile){
-					return function(e)
-					{
-						priv_key = undefined;
-						
-					};
-				})(f);
-
-				reader.onabort = (function(theFile){
-					return function(e)
-					{
-						priv_key = undefined;
-						alert("Erro ao ler documento!");
-					};
-				})(f);
-
-				reader.onerror = (function(theFile){
-					return function(e)
-					{
-						priv_key = undefined;
-						alert("Erro ao ler documento!");
-					};
-				})(f);
-
-				reader.readAsBinaryString(f);
-			}
-		});
-
 		$("#priv_key").bind("change", function(evt){
 			priv_key = $("#priv_key").val();
 		});
