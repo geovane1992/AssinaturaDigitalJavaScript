@@ -6,8 +6,7 @@ body
 	padding: 0;
 	text-align: center;
 	background: wheat;
-	background-image: url(image/image.jpg);
-        background-repeat: no-repeat;
+	background-repeat: no-repeat;
         -moz-background-size: 100% 100%;
         -webkit-background-size: 100% 100%;
         background-size: 100% 100%;
